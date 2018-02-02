@@ -1,0 +1,48 @@
+﻿<Window x:Name="mainWindow" x:Class="LostAndFoundGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lost and Found" Height="385.61" Width="1029.597" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="resultsTextBox" HorizontalAlignment="Left" Height="294" Margin="10,41,0,0" TextWrapping="Wrap" Text="Output will appear here" VerticalAlignment="Top" Width="597"/>
+        <ComboBox x:Name="categoryComboBox" HorizontalAlignment="Left" Margin="625,88,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBoxCategory_SelectionChanged">
+            <ComboBoxItem Content="Antiques"/>
+            <ComboBoxItem Content="Appliances"/>
+            <ComboBoxItem Content="Arts and Crafts"/>
+            <ComboBoxItem Content="ATVs and Others"/>
+            <ComboBoxItem Content="Baby and Child"/>
+            <ComboBoxItem Content="Beauty and Health"/>
+            <ComboBoxItem Content="Bikes"/>
+            <ComboBoxItem Content="Boats"/>
+            <ComboBoxItem Content="Books"/>
+            <ComboBoxItem Content="Buisness"/>
+            <ComboBoxItem Content="CDs, DVDs, VHS"/>
+            <ComboBoxItem Content="Cell Phones"/>
+            <ComboBoxItem Content="Clothes and Accessories"/>
+            <ComboBoxItem Content="Collectables"/>
+            <ComboBoxItem Content="Computers"/>
+            <ComboBoxItem Content="Computer Parts"/>
+            <ComboBoxItem Content="Electronics"/>
+            <ComboBoxItem Content="Garden and Farm"/>
+            <ComboBoxItem Content="Furniture"/>
+            <ComboBoxItem Content="General"/>
+            <ComboBoxItem Content="Heavy Equipment"/>
+            <ComboBoxItem Content="Household"/>
+            <ComboBoxItem Content="Jewelry"/>
+            <ComboBoxItem Content="Materials"/>
+            <ComboBoxItem Content="Motorcycles"/>
+            <ComboBoxItem Content="Music Industry"/>
+            <ComboBoxItem Content="Photo and Video"/>
+            <ComboBoxItem Content="Camping and RVs"/>
+            <ComboBoxItem Content="Sporting"/>
+            <ComboBoxItem Content="Tickets"/>
+            <ComboBoxItem Content="Tools"/>
+            <ComboBoxItem Content="Toys and Games"/>
+            <ComboBoxItem Content="Video Gaming"/>
+        </ComboBox>
+        <Label x:Name="categoryLabel" Content="Category" HorizontalAlignment="Left" Margin="625,62,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Height="19" Margin="625,316,0,0" VerticalAlignment="Top" Width="84" Click="searchButton_Click"/>
+        <Label x:Name="resultsLabel" Content="Results" HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox x:Name="queryTextBox" HorizontalAlignment="Left" Height="136" Margin="625,168,0,0" TextWrapping="Wrap" Text="Put your search here, sparated by commas. " VerticalAlignment="Top" Width="383"/>
+        <Label x:Name="queryLabel" Content="Query" HorizontalAlignment="Left" Height="25" Margin="625,138,0,0" VerticalAlignment="Top" Width="84"/>
+    </Grid>
+</Window>
